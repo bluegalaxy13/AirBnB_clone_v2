@@ -5,7 +5,7 @@ execute: fab -f 1-pack_web_static.py do_pack
 """
 
 from datetime import datetime
-from fabric.api import *
+from fabric import Connection, task
 
 def do_pack():
     """
