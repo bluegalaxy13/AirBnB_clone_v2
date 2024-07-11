@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 from datetime import datetime
-from fabric import task
-from invoke import run
+from fabric import Connection, task
 
 @task
 def do_pack(c):
