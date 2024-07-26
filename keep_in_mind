@@ -1,0 +1,11 @@
+Difference between:
+
+- url: https://www.youtube.com/watch?v=gzqz2ftT-yc&list=PLlekK-EaHbbhZk9n_9Sz7zoMcDUPHFJtC
+
+- protocol: https://  or http://
+
+- route: GET, POST, PUT, DELETE
+
+- path: /products/category/books
+
+- params: books?sort=price&page=2#reviews
