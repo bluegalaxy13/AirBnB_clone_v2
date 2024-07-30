@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Starts a Flask web application.
+"""
+Starts a Flask web application.
 
 This module starts a Flask web application that listens on
 0.0.0.0, port 5000, and responds with various messages to
