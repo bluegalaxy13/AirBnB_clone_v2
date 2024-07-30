@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Starts a Flask web application
+"""Starts a Flask web application with two routes:
+    - /: Displays 'Hello HBNB!'
+    - /hbnb: Displays 'HBNB'
 """
 from flask import Flask
 
@@ -9,7 +11,10 @@ app.url_map.strict_slashes = False
 @app.route('/')
 def home():
     """
-     Displays 'Hello HBNB!'
+    Displays 'Hello HBNB!'
+
+    Returns:
+        str: The message 'Hello HBNB!'
     """
     return 'Hello HBNB!'
 
@@ -17,8 +22,11 @@ def home():
 def hbnb():
     """
     Displays 'HBNB'
+
+    Returns:
+        str: The message 'HBNB'
     """
     return 'HBNB'
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5000)
